@@ -3,10 +3,8 @@ import { baseName, pathName } from "./my_modules/utility.js";
 import { argv } from "process";
 import chalk from "chalk";
 
-
-
  const argvs = process.argv;
-//  const argv = argvs.slice(2);
+
  const operation = argv[0];
  const a = parseInt(argv[1]);
  const b = parseInt(argv[2]);
