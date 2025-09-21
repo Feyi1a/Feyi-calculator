@@ -1,7 +1,13 @@
 /*Making this module to handle other logics such as:
-Check if the user input is a number,
-Check if the numbers are integers or floating points.
+Check the Apps file directory using local in-built nodesJs through ESM format,
+Check for the Applications Basename.
 */
 
-import { add, substract, multiply, divide} from "./my_modules/calculator.js";
+export function pathName(){
+    return import.meta.filename;
+}
+
+export function baseName(){
+    return import.meta.dirname;
+}
 
