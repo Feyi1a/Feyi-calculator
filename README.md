@@ -1,7 +1,7 @@
 
 ## Project structure
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5hcugvfa5wy6nb702pkb.png)
+![Image description](https://drive.google.com/file/d/1WK76j_O8OplXt4kdUUbGXGX_aCvWaVcd/view?usp=sharing)
 
 ## Project Setup
 - Create directory and cd to the directory
@@ -21,18 +21,18 @@ npm i chalk
 
 ```
 {
-  "name": "ameh-calculator",
+  "name": "feyi_calculator",
+  "description": "A simple NodeJs Calculator.",
   "version": "1.0.0",
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "dev": "node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Olukayode Feyi",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "chalk": "^5.4.1"
   }
@@ -66,6 +66,6 @@ git commit -m "message"
 
 ```
 git remote add origin https://github.com/Feyi1a/Feyi-calculator.git
-git branch -M main
+git branch firstBranch
 git push -u origin firstBranch
 ```
