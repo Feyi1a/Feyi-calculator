@@ -3,6 +3,7 @@ import { baseName, pathName } from "./my_modules/utility.js";
 import { argv } from "process";
 import chalk from "chalk";
 
+// Getting the command line arguments
  const argvs = process.argv;
 
  const operation = argv[0];
@@ -25,10 +26,15 @@ if (operation === 'divide'){
     console.log(operation + 'is' + (a / b));
 };
 
-console.log('My Calculator file Path:' , `${pathName()}\n`);
+// Displaying the results:
+console.log(`${chalk.blue('My Calculator File Path is: ',import.meta.url)}\n`);
 console.log('My Calculator Base Name:' , `${baseName()}\n`);
+
+// Displaying the Student ID:
 console.log('Students ID NUM:', `${chalk.green('BD/2025/TC3/057')}\n\n`);
+
+// Using Chalk module to style the output in the terminal:
 console.log('Result for Addition is:', `${chalk.blue(add(3, 5))}`);
-console.log('Result for Substraction is:', `${chalk.redBright.bold(substract(9, 6))}\n`);
+console.log(`${chalk.redBright.bold('Result for Substraction is:',substract(9, 6))}\n`);
 console.log('Result for Multiplication is:', `${chalk.yellowBright.bold(multiply(8, 7))}`);
-console.log('Result for Division is:', `${chalk.cyanBright.bold(divide(10, 100))}\n`);
+console.log(`${chalk.cyanBright.bold('Result for Division is:', (divide(10, 100)))}\n`);
