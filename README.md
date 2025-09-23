@@ -52,6 +52,7 @@ npm i chalk
 ```
 npm start
 ```
+to show the output:
 ![Image description](https://drive.google.com/file/d/1Z6cB5kQjYb3dWTz0Cqrtx04A4mp1_6iZ/view?usp=sharing)
 
 - Initialize git, add and commit the project to GitHub
